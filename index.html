@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cross-Origin-Opener-Policy" content="same-origin">
+    <meta http-equiv="Cross-Origin-Embedder-Policy" content="require-corp">
+    <title>إنشاء فيديو بالآيات القرآنية</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>إنشاء فيديو بالآيات القرآنية</h1>
+        
+        <div class="form-container">
+            <div class="form-group">
+                <label for="verse">أدخل الآية:</label>
+                <textarea id="verse" placeholder="أدخل الآية..."></textarea>
+            </div>
+            
+            <div class="form-group">
+                <label for="image">اختر ملف الصورة:</label>
+                <input type="file" id="image" accept="image/*">
+            </div>
+            
+            <button id="createBtn" class="create-btn">إنشاء الفيديو</button>
+            
+            <div id="status" class="status"></div>
+            <div id="result" class="result"></div>
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/@ffmpeg/ffmpeg@0.11.6/dist/ffmpeg.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
